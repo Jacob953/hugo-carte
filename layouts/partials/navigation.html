@@ -6,7 +6,7 @@
     <nav id="page-toc">
         <h2>目录</h2>
         {{ range .Pages }}
-            <a href="#{{ .Title | urlize }}">{{ .Title }}</a>
+            <a href='#{{ .Title | replaceRE "[ *]" "-" }}'>{{ .Title }}</a>
         {{ end }}
     </nav>
 {{ end }}
