@@ -8,9 +8,6 @@
         {{ range .Pages }}
         <ul>
             <a href='#{{ .Title | replaceRE "[ *]" "-" }}'>{{ .Title }}</a>
-            <aside>
-                {{ .TableOfContents }}
-            </aside>
         </ul>
         {{ end }}
     </nav>
