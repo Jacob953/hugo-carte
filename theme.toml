@@ -1,9 +1,6 @@
 name = "hugo-carte"
 license = "MIT"
-licenselink = "https://github.com/mbrt-yeah/uwe-uwe-hugo/blob/master/LICENSE"
 description = "A minimalist hugo theme for building documentation websites."
-homepage = "https://github.com/mbrt-yeah/uwe-uwe-hugo"
-demosite = "https://mbrt-yeah.github.io/uwe-uwe-hugo-example/"
 
 tags = [
   "docs",
