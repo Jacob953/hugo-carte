@@ -4,11 +4,9 @@
 
 {{ if $showToc }} 
     <nav id="page-toc">
-        <h2>Table of Contents</h2>
-        <ul>
-            {{ range .Pages }}
-                <li><a href="#{{ .Title | lower | urlize }}">{{ .Title }}</a></li>
-            {{ end }}
-        </ul>
+        <h2>目录</h2>
+        {{ range .Pages }}
+            <a href="#{{ .Title | urlize }}">{{ .Title }}</a>
+        {{ end }}
     </nav>
 {{ end }}
