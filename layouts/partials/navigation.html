@@ -7,7 +7,7 @@
         <h2>目录</h2>
         {{ range .Pages }}
         <ul>
-            <a href='#{{ .Title | replaceRE "[ *]" "-" }}'>{{ .Title }}</a>
+            <a href='#{{ .Title | safeHTML | replaceRE "[ *]" "-" | replaceRE "[&]" "" }}'>{{ .Title }}</a>
         </ul>
         {{ end }}
     </nav>
